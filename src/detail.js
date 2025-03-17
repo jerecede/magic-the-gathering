@@ -4,7 +4,7 @@ const urlParams = new URLSearchParams(window.location.search);
 
 const magicCardID = urlParams.get('id');
 
-// const currentPage = 
+// const currentPage =
 
 const service = new MagicService();
 
