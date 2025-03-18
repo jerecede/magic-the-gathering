@@ -16,12 +16,7 @@ class MagicService {
         const url = MagicService.BASE_URL + MagicService.VERSION_URL + MagicService.MAGIC_CARD_URL + '?page=' + this.page;
         return fetch(url)
         .then(res => res.json())
-        .then(data => {
-            console.log(url);
-            console.log(data);
-            const newDataCards = data.cards.filter(card => !!card.imageUrl);
-            return newDataCards;
-        })
+        .then(data => data.cards)
         .catch(err => console.log(err));
     }
 

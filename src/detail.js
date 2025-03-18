@@ -5,6 +5,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const magicCardID = urlParams.get('id');
 
 // const currentPage =
+//2 soluzioni dati da andrea belli, guardare rep di jan
 
 const service = new MagicService();
 
